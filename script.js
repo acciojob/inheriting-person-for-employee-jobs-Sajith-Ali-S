@@ -1,7 +1,7 @@
 Person.__proto__.greet = function(){
     console.log(`Hello, my name is ${this.name}, I am ${this.age} years old.`)
 }
-Employee.__proto__.greet = greet;
+Employee.__proto__.greet = Person.__proto__.greet;
 // complete this js code
 function Person(name, age) {
 this.name=name;
